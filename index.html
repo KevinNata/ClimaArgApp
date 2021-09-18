@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaArgentinoApp</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+    <header>
+        <div id="logoIzq">
+            <img src="style/banderitaArg.png">
+            <h2>ClimaArgApp <i class="bi bi-brightness-high"></i></h2>
+        </div>
+        <div id="busquedaCentral">
+            <form>
+                <input id="entradaBusqueda" type="search" list="listaCiudades" placeholder="Elige una ciudad.." > 
+                <button id="btn-buscar" type="submit"><i class="bi bi-search"></i></button> 
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+            <img id="cieloDespejado" src="style/cieloDespejado.png" alt="cielo despejado">
+            <img id="cieloNublado" src="style/cieloNublado.png" alt="cielo con nubes">
+            <img id="cieloLluvioso" src="./style/cieloLluvioso.png" alt="cielo con nubes">
+            <img id="cieloNocturno" src="./style/cieloNocturno.png" alt="cielo con nubes">
+            <img id="cieloNevando" src="./style/cieloNevando.png" alt="cielo nevando">
+        </div>
+    </section>
+<hr>
+    <section id="bienvenida">
+        <div>
+            <h2 class="parrafoBienvenida"><i class="bi bi-arrow-up"></i><b>Elige una ciudad</b><i class="bi bi-arrow-up"></i></h2>
+            <h1 id="tituloBienvenida"> ¡Hola! <br> Bienvenido/a a ClimaArgApp</h1>
+            <p class="parrafoBienvenida">ClimaArgApp muestra los datos meteorológicos más importantes de <b>más de 1700 ciudades </b> de todo el país, ¡en tiempo real!</p>
+        </div>
+    </section>
+    <main id="main">
+        <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <h3 id="nombreCiudad"></h3>
+                <div id="contenidoColumna5">
+                    <span id="descripcionCiudad"> Ciudad </span> <br>
+                    <span id="iconoDescripcion"> Tiempo </span>
+                    <span id="coordenadasCiudad"> <i class="bi bi-geo-alt"></i> Coordenadas </span>
+                    <span id="mapa"></span>
+                </div>
+                
+                
+              </div>
+              <hr>
+              <div class="col-7">
+                <table id="tablaDatos">
+                    <tr>
+                        <th id="datosActualizados" colspan="2">Datos actualizados</th>
+                    </tr>
+                    <tr>
+                        <td id="datosHumedad">  </td>
+                        <td id="datosPresion"> </td>
+                    </tr>
+                    <tr>
+                        <td id="datosTemperatura">  </td>
+                        <td id="datosViento">   </td>
+                    </tr>
+                    
+                </table>
+              </div>
+              <hr>
+            </div>
+          </div>
+    </main>
+
+
+ 
+
+    <footer>
+        <div>
+            <img class="firma" src="./style/Firma2.png" alt="firma Kevin Nat"> 
+            <a href="mailto:kevinnatalini@gmail.com" target="_blank"><img class="contacto" src="./style/Gmail_29991.png" alt="icono gmail"> </a>
+            <a href="https://www.linkedin.com/in/kevinnatalini" target="_blank"><img class="contacto" src="./style/sociallinkedin_member_2751.png" alt="icono linkedin"></a>
+        </div>
+
+    </footer>
+
+
+    <datalist id="listaCiudades">
+        
+    </datalist>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
+
+
+

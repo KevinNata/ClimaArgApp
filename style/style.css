@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4468A8;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #C6D2E9;
+    height: auto;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+#logoIzq{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+#logoIzq h2{
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+#logoIzq img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#busquedaCentral{
+    width: 100%;
+    
+    text-align: center;
+}
+
+#busquedaCentral input{
+    width: 60%;
+    height: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #E2E8F3;
+}
+#busquedaCentral input::placeholder{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+#btn-buscar{
+    width: 50px;
+    height: 40px;
+    background: #6684BA;
+    
+}
+
+#btn-buscar i{
+    width: 100%;
+    font-size: 15px;
+    display: inline;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#btn-buscar :hover{
+    background-color: #BCD4FF;
+    font-size:18px;
+}
+
+.banner{
+    width: 100%;
+    margin: 0;
+    height: 15%;
+    }
+
+#cieloDespejado{
+    width: 100%;
+    height: 100%;
+    max-height:430px;
+    display:none;
+    
+}
+#cieloNublado{
+    width: 100%;
+    height: 100%;
+    max-height:430px;
+    display:none;
+}
+
+#cieloLluvioso{
+    width: 100%;
+    height: 100%;
+    max-height:430px;
+    display:none;
+}
+
+#cieloNocturno{
+    width: 100%;
+    height: 100%;
+    max-height:430px;
+    display:none;
+}
+
+#cieloNevando{
+    width: 100%;
+    height: 100%;
+    max-height:430px;
+    display:none;
+}
+
+
+
+#bienvenida{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    background-color: #C6D2E9;
+    display: block;
+    text-align: center;
+    
+}
+
+#tituloBienvenida{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+   
+@media (min-width:700px){
+    #tituloBienvenida{
+        font-size:60px
+    }
+    .parrafoBienvenida{
+        font-size:35px;
+        margin-bottom: 55px;
+    }
+}
+
+main{
+    display: none;
+}
+
+.col-5{
+    
+    width: 98%;
+    margin: 50px auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color:#C6D2E9;
+    font-weight: bold;
+}
+
+.col-5 h3{
+    font-weight: bold;
+}
+#contenidoColumna5{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#descripcionCiudad{
+    height: 20px;
+}
+
+#iconoDescripcion{
+    width: 80px;
+    height: 80px;
+    margin:0 auto;
+}
+
+#iconoDescripcion img{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#coordenadasCiudad{
+    height: 20px;
+}
+
+#mapa{
+    width: 90%;
+    height: 45%;
+    margin: 0 auto;
+}
+
+#mapa img{
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    margin-top: 2px;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.col-7{
+    width: 98%;
+    margin: 100px auto;
+    height: auto;
+    background-color:#C6D2E9;
+}
+
+#tablaDatos{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+#tablaDatos th{
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+#tablaDatos tr td{
+    text-align: left;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer{
+    width: 100%;
+    background: #C6D2E9;
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black
+
+}
+
+footer div{
+    width: 90%;
+    margin: 0 auto;
+}
+.firma{
+    width: 150px;
+    height: 50px;
+}
+
+.contacto{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 5px;
+}
